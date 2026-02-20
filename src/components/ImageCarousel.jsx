@@ -22,11 +22,11 @@ function ImageCarousel({ images }) {
     <div className="carousel">
       <div className="carousel-track">
         <button className="carousel-btn" onClick={handlePrevious} aria-label="Previous image">&#8592;</button>
-        <img
-          src={images[safeIndex]}
-          alt={`Carousel image ${safeIndex + 1}`}
-          className="carousel-image"
-        />
+          <img
+            src={images[safeIndex]}
+            alt={`Slide ${safeIndex + 1} of ${images.length}`}
+            className="carousel-image"
+          />
         <button className="carousel-btn" onClick={handleNext} aria-label="Next image">&#8594;</button>
       </div>
 
