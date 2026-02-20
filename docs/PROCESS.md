@@ -5,7 +5,7 @@ The feature I built is an image carousel component that can be reused in React. 
 Working in small steps through micro‑iteration felt pretty natural because it felt like an evolution of watching a tutorial on how to make the feature. It was almost like I was following a tutorial, but I was able to stop and ask questions or even change certain aspects of the feature in real time.
 
 
-## What di self-review catch?
+## What did self-review catch?
 When I asked the AI to self‑review, it caught three things in the code. They weren’t major problems, but they were helpful suggestions to improve accessibility. The first thing it caught was that the code was calling a useState hook during a render, which could potentially cause an extra re‑render, so it fixed this by creating a safeIndex variable. The second thing it caught was missing accessibility attributes on the arrow symbols, which screen readers cannot interpret, so it added ARIA attributes with text descriptors. The last thing it caught was that the spans hosting the dots at the bottom of the carousel also didn’t have any accessibility options, so it added ARIA labels to those as well.
 
 ## Tool Impressions
